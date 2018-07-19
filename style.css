@@ -154,3 +154,12 @@ font-family: 'Hammersmith One', sans-serif;
       font-family: 'Hammersmith One', sans-serif;
       text-shadow: 2px 2px 4px #000000;
 }
+
+.Productos{
+ display: flex;
+ justify-content: center;
+}
+
+.Productos h1{
+ font-family: 'Hammersmith One', sans-serif; 
+}
