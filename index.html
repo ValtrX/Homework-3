@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>VGames Store  </title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Hammersmith+One" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style2.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">
+      <img src="images/logo.png" alt="logo">
+    </div>
+      <nav class="menu">
+        <a  class="email" href="mailto:grateroldiaz@hotmail.com"><i class="fa fa-envelope-o" style="font-size:22px;color:red;margin-right:5px;"></i> <span>VGStore@hotmail.com</span></a>
+        <ul>
+          <li>
+            <a href="#">PS4</a>
+          </li>
+          <li>
+            <a href="#">Xbox One</a>
+          </li>
+          <li>
+            <a href="#">Nintendo switch</a>
+          </li>
+          <li>
+            <a href="#">3DS</a>
+          </li>
+          <li>
+            <a href="#">Tarjetas de regalo</a>
+          </li>
+          <li>
+            <a href="#">Accesorios</a>
+          </li>
+          <button type="submit" name="button" class="button">
+            <i class="fa fa-search"></i>
+          </button>
+        </ul>
+      </nav>
+  </header>
+  <section class="w3-content w3-display-container" style="width:100">
+
+    <div class="rel w3-animate-fading mySlides">
+      <img src="images\mass.jpg" style="width:100%">
+      <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+      <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+
+      <div class="aviso1">
+        <h2>¡RESERVA YA!</h2>
+        <p>Mass Effect: Andromeda</p>
+        <a class="button_aviso1" href="#">Reservar</a>
+      </div>
+    </div>
+
+    <div class="rel mySlides w3-animate-fading">
+      <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+      <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+      <img src="images\horizon.jpg" style="width:100%">
+
+      <div class="aviso2">
+        <h2>¡EDICION DEFINITVA!</h2>
+        <p>Horizon Zero Dawn™ <br> Con todos sus DLC's</p>
+        <a class="button_aviso2" href="#">Comprar</a>
+      </div>
+    </div>
+
+    <div class="rel mySlides w3-animate-fading">
+      <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+      <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+      <img src="images\dmc5.jpg" style="width:100%">
+
+      <div class="aviso3">
+        <h2>¡NUEVO TRAILER!</h2>
+        <p>Devil May Cry 5 primer trailer</p>
+        <a class="button_aviso3" href="#">Ver Trailer</a>
+      </div>
+    </div>
+
+    <div class="rel mySlides w3-animate-fading">
+      <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+      <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+      <img src="images\Xbox.jpg" style="width:100%">
+
+      <div class="aviso4">
+        <h2>¡Ya Disponible!</h2>
+        <p>Xbox one S 1TB </p>
+        <a class="button_aviso2" href="#">Comprar</a>
+      </div>
+    </div>
+
+
+
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+
+}
+</script>
+</body>
+</html>

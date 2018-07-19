@@ -1,0 +1,156 @@
+*{
+  font-family: 'Rubik', sans-serif;
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+button{
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding-left: 15px;
+}
+
+.header{
+  display: flex;
+  height: 65px;
+  width: 100%;
+  justify-content: space-around;
+  background: black;
+}
+
+
+.logo{
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.logo img{
+  height: 89%;
+  margin: -3px;
+  cursor: pointer;
+}
+
+.menu ul{
+  display: flex;
+  list-style: none;
+  margin: 0;
+  margin-top: 9px;
+}
+
+.email{
+  margin: 8px;
+  display: flex;
+  justify-content: flex-end;
+  color: white;
+  margin-bottom: 1px;
+  font-size: 17px;
+}
+.rel{position: relative;}
+.menu li{
+  padding-left: 20px;
+}
+.menu a{
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+}
+
+.aviso1{
+  position: absolute;
+  top: 28%;
+  left: 19%;
+}
+.mySlides h2{
+ margin: 0;
+color: white;
+font-size: 4.5vw;
+-webkit-text-stroke: 2px #000000b0;
+font-family: 'Hammersmith One', sans-serif;
+}
+
+.aviso1 p{
+  color: #ffffff;
+      font-size: 1.6vw;
+      margin-top: 0;
+      font-family: 'Hammersmith One', sans-serif;
+      text-shadow: 2px 2px 4px #000000;
+}
+
+.button_aviso1{
+  border-radius: 12px;
+  border: none;
+  color: white;
+  padding: 7px 12px;
+  cursor: pointer;
+  font-size: 18px;
+  background: linear-gradient(to left, #fe344e, #ff7250);
+  text-decoration: none;
+}
+.aviso2{
+  position: absolute;
+  top: 24%;
+  left: 19%;
+}
+
+.aviso2 p{
+  color: #ffffff;
+      font-size: 1.6vw;
+      margin-top: 0;
+      font-family: 'Hammersmith One', sans-serif;
+      text-shadow: 2px 2px 4px #000000;
+}
+
+
+.button_aviso2{
+ border-radius: 12px;
+ border: none;
+ color: white;
+ padding: 7px 12px;
+ cursor: pointer;
+ font-size: 18px;
+ background: linear-gradient(to left, #30882ffa, #81cc73);
+ text-decoration: none;
+}
+
+.aviso3{
+  position: absolute;
+  top: 24%;
+  left: 19%;
+}
+
+.aviso3 p{
+  color: #ffffff;
+      font-size: 1.6vw;
+      margin-top: 0;
+      font-family: 'Hammersmith One', sans-serif;
+      text-shadow: 2px 2px 4px #000000;
+}
+
+.button_aviso3{
+ border-radius: 12px;
+ border: none;
+ color: white;
+ padding: 7px 12px;
+ cursor: pointer;
+ font-size: 18px;
+ background: linear-gradient(to left, #6b1633, #F44336);
+ text-decoration: none;
+}
+
+.aviso4{
+  position: absolute;
+  top: 24%;
+  left: 55%;
+}
+
+.aviso4 p{
+  color: #ffffff;
+      font-size: 1.6vw;
+      margin-top: 0;
+      font-family: 'Hammersmith One', sans-serif;
+      text-shadow: 2px 2px 4px #000000;
+}
