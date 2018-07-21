@@ -114,6 +114,30 @@ font-family: 'Hammersmith One', sans-serif;
   background: #6e93ff;
   text-decoration: none;
 }
+
+.button_avisou2{
+  border-radius: 12px;
+  border: none;
+  color: white;
+  padding: 7px 12px;
+  margin: 13px;
+  cursor: pointer;
+  font-size: 18px;
+  background: #dc395d;
+  text-decoration: none;
+}
+
+.button_avisou3{
+  border-radius: 12px;
+  border: none;
+  color: white;
+  padding: 7px 12px;
+  margin: 13px;
+  cursor: pointer;
+  font-size: 18px;
+  background: #dc395d;
+  text-decoration: none;
+}
 .aviso2{
   position: absolute;
   top: 24%;
@@ -259,7 +283,7 @@ font-family: 'Hammersmith One', sans-serif;
 
 
 .Juego{
-  border: 1px solid #b5b5b5;
+  border: 1px solid #b5b5b54a;
   text-align: center;
   padding-bottom: 5px;
 }
@@ -269,7 +293,7 @@ font-family: 'Hammersmith One', sans-serif;
   cursor: pointer;
 }
 .Juego h4{
-  border-top: 1px solid #b5b5b5;
+  border-top: 1px solid #b5b5b54a;
   padding: 13px 13px 0px 13px;
 }
 
@@ -285,7 +309,7 @@ font-family: 'Hammersmith One', sans-serif;
 }
 
 .Juego2{
-  border: 1px solid #b5b5b5;
+  border: 1px solid #b5b5b54a;
   text-align: center;
   padding-bottom: 5px;
   overflow: hidden;
@@ -300,7 +324,7 @@ font-family: 'Hammersmith One', sans-serif;
 
 .Juego2 p{
   color: #5f5f5f;
-  padding: 0 15px; 
+  padding: 0 15px;
 }
 
 
@@ -362,12 +386,69 @@ font-family: 'Hammersmith One', sans-serif;
   margin-right: 8px;
 }
 
+.m0{margin: 0; text-align: center; color: white;}
+.Articulos{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 30px 120px;
+}
+.Articulo{
+  text-align: center;
+  padding-bottom: 5px;
+  overflow: hidden;
+  background: #0000002e;
+}
 
+.Articulo h4{
+  padding: 13px 13px;
+  color: white;
+  border-bottom: 1px solid #ffffff33;
+}
 
+.Articulo p{
+  color: white;
+  padding: 0 15px;
+}
 
+.pink{
+  background: #ef6161;
+}
 
+.pink h1{
+  margin: 0;
+}
 
+.ftext{
+  display: inline-flex;
+  padding: 0 10px;
+}
 
+.precioU{
+  display: flex;
+  justify-content: center;
+}
+
+.precioU p{
+  padding: 0;
+}
+
+.dollar{
+  font-weight: bold;
+  font-size: 27px;
+  margin: 0;
+}
+
+.cent{
+  margin-top: 0;
+  margin-left: 0;
+}
+
+.since{
+margin-right: 8px;
+}
+
+.mu2{margin: 17px;}
 
 
 
