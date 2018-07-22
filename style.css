@@ -12,10 +12,19 @@ button{
   cursor: pointer;
   padding-left: 15px;
 }
-
-.T{
-  font-family: 'Rubik', sans-serif;
+iframe{
+  border: 0;
+  left: 30px;
+  margin: auto;
+  padding: 19px;
 }
+
+a:hover{
+  text-decoration: none;
+}
+
+.T{font-family: 'Rubik', sans-serif;}
+.T2{font-family: 'Rubik', sans-serif; margin-top:0; margin-bottom: 26px; }
 .header{
 display: flex;
 height: 65px;
@@ -218,7 +227,6 @@ font-family: 'Hammersmith One', sans-serif;
 .Productos1{
   display: flex;
   justify-content: space-around;
-  padding: 30px 120px;
   border-top: 1px solid #bdbdbd;
   border-bottom: 1px solid #bdbdbd;
   flex-wrap: wrap;
@@ -234,6 +242,7 @@ font-family: 'Hammersmith One', sans-serif;
   background: #5a0606;
   box-shadow: 2px 3px 1px 0px lightsteelblue;
   cursor: pointer;
+  margin: 13px 0;
 }
 
 .Category img:hover{
@@ -242,9 +251,9 @@ font-family: 'Hammersmith One', sans-serif;
 }
 
 .About{
-  height: 320px;
   background: #111138;
   display: flex;
+  flex-wrap: wrap-reverse;
   justify-content: center;
   align-items: center;
 }
@@ -254,13 +263,16 @@ font-family: 'Hammersmith One', sans-serif;
 }
 
 .AboutP{
+  margin: 38px;
+  width: 300px;
   text-align: center;
   color: white;
   padding-left: 43px;
 }
 
 .AboutP p{
- font-size: 15px;
+  font-size: 15px;
+  margin-bottom: 27px;
 }
 .fila{
   display: flex;
@@ -278,7 +290,7 @@ font-family: 'Hammersmith One', sans-serif;
   flex-wrap: wrap;
   justify-content: space-around;
   border-top: 1px solid #bdbdbd;
-  padding: 30px 120px;
+  padding: 22px 120px;
 }
 
 
@@ -340,7 +352,7 @@ font-family: 'Hammersmith One', sans-serif;
 
 .calendar{
   background: #f54e4e;
-  padding: 0px 10px;
+  padding: 4px 10px;
   font-size: 20px;
   border-radius: 50%;
   margin: 7px;
@@ -378,7 +390,7 @@ font-family: 'Hammersmith One', sans-serif;
 
 .comment{
   background: #5380c5;
-  padding: 4px 9px 3px 7px;
+  padding: 4px 9px;
   font-size: 18px;
   border-radius: 50%;
   color: white;
@@ -386,7 +398,7 @@ font-family: 'Hammersmith One', sans-serif;
   margin-right: 8px;
 }
 
-.m0{margin: 0; text-align: center; color: white;}
+.m0{margin: 0; text-align: center; color: white; padding: 10px;}
 .Articulos{
   display: flex;
   flex-wrap: wrap;
@@ -450,17 +462,185 @@ margin-right: 8px;
 
 .mu2{margin: 17px;}
 
+.contacto{
+  background: #111138;
+  display: flex;
+  flex-wrap: wrap;
+}
 
+.contactinfo{
+  align-items: center;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  padding-bottom: 30px;
+  flex-direction: column;
+  text-align: center;
+}
 
+.white{
+  color: white;
+}
 
+.fa-phone:before {
+ content: "\f095";
+ margin-right: 11px;
+ color: white;
+ padding: 6px 6px;
+ border: 1px solid;
+ border-radius: 50%;
+ cursor: pointer;
+}
 
+.item {
+    background: rgb(50, 128, 114);
+    text-align: center;
+    height: 300px;
+}
 
+.h2u {
+    margin: 0;
+    color: #fff;
+    padding-top: 80px;
+    font-size: 30px;
+}
 
+.bi{
+  background-image: rgba(254, 252, 255, 0); !important;
+}
 
+.left1{
+background-image: -webkit-linear-gradient(left,rgba(0,0,0,0) 0,rgba(0, 0, 0, 0) 100%);
+background-image: -o-linear-gradient(left,rgba(0,0,0,0) 0,rgba(0, 0, 0, 0) 100%);
+background-image: -webkit-gradient(linear,left top,right top,from(rgba(0,0,0,0)),to(rgba(0, 0, 0, 0)));
+background-image: linear-gradient(to right,rgba(0,0,0,0) 0,rgba(0, 0, 0, 0) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+background-repeat: repeat-x;
+}
 
+.right1{
+    right: 0;
+    left: auto;
+    background-image: -webkit-linear-gradient(left,rgba(0,0,0,.0) 0,rgba(0,0,0,0) 100%);
+    background-image: -o-linear-gradient(left,rgba(0,0,0,.0) 0,rgba(0,0,0,0) 100%);
+    background-image: -webkit-gradient(linear,left top,right top,from(rgba(0,0,0,0)),to(rgba(0,0,0,.5)));
+    background-image: linear-gradient(to right,rgba(0,0,0,0) 0,rgba(0,0,0,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+    background-repeat: repeat-x;
+}
 
+.carousel-control2 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 15%;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0,0,0,.6);
+    background-color: rgba(0,0,0,0);
+    filter: alpha(opacity=50);
+    opacity: .5;
+}
 
+.glyphicon-chevron-right2{
+    width: 30px;
+    height: 30px;
+    margin-top: -10px;
+    font-size: 30px;
+}
 
+.glyphicon2 {
+
+      position: relative;
+      top: 50%;
+      margin-top: -10px;
+      display: inline-block;
+      font-family: 'Glyphicons Halflings';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 1;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+}
+
+.buttonU{
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding-left: 15px;
+}
+.materialboxed:hover:not(.active) {
+   cursor: pointer;
+   transition: 0;
+}
+.materialboxed.active {
+    cursor: -webkit-zoom-out;
+    cursor: zoom-out;
+}
+
+#materialbox-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #292929;
+    z-index: 1000;
+    will-change: opacity;
+}
+
+.carousel-control2:focus, .carousel-control2:hover {
+    color: #fff;
+    text-decoration: none;
+    filter: alpha(opacity=90);
+    outline: 0;
+    opacity: .9;
+}
+
+#slideshow {
+  margin: 0 160px 0 52px;
+  position: relative;
+  width: 240px;
+  height: 240px;
+}
+
+#slideshow > div {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+}
+
+.fila img:hover{
+    transform: scale(1.09);
+    transition:1.1s;
+}
+
+.buttonU{
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding-left: 15px;
+}
+
+@media screen and (max-width: 745px){
+  .email{display: none;}
+  .header{flex-direction: column;height: initial;}
+  .logo{margin: auto;height: 48px;}
+  .logo img{height: 100%;}
+  .buttonU{display: none;}
+  .menu{display: flex;justify-content: center;}
+  .menu ul{margin-bottom: 10px;padding: 0;}
+  }
+@media screen and (max-width: 1024px){
+    .Juego{margin: 10px;}
+    .Juego2{margin: 10px;}
+    .Articulo{margin: 10px;}}
 
 .xs1 {
   width: 8.33%; }
@@ -535,6 +715,7 @@ margin-right: 8px;
   margin-left: 99.96%; }
 
 @media screen and (min-width: 568px) {
+
   .s1 {
     width: 8.33%; }
 
