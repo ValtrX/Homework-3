@@ -159,7 +159,7 @@ a:hover {
   color: white;
   padding: 7px 12px;
   margin: 13px;
-  cursor: pointer;
+  cursor: pointer;zz
   font-size: 18px;
   background: #dc395d;
   text-decoration: none;
@@ -271,7 +271,7 @@ a:hover {
 }
 
 .About {
-  background: #111138;
+  background: linear-gradient(to bottom right, #7c203f, #2f4e9a);
   display: flex;
   flex-wrap: wrap-reverse;
   justify-content: center;
@@ -460,7 +460,7 @@ a:hover {
 }
 
 .pink {
-  background: #392f75;
+  background: linear-gradient(to right, #7c203f, #2f4e9a);
 }
 
 .pink h1 {
@@ -501,7 +501,7 @@ a:hover {
 }
 
 .contacto {
-  background: #111138;
+  background: linear-gradient(to top, #0c0c29, #03164e);
   display: flex;
   flex-wrap: wrap;
 }
