@@ -460,7 +460,7 @@ a:hover {
 }
 
 .pink {
-  background: #ef6161;
+  background: #392f75;
 }
 
 .pink h1 {
@@ -655,9 +655,8 @@ a:hover {
   bottom: 10px;
 }
 
-.fila img:hover {
-  transform: scale(1.09);
-  transition: 1.1s;
+.materialboxed:hover:not(.active) {
+  opacity: .8;
 }
 
 .buttonU {
