@@ -531,7 +531,7 @@ a:hover {
 }
 
 .item {
-  background: rgb(50, 128, 114);
+  background: linear-gradient(to left, #7c203f, #2f4e9a);
   text-align: center;
   height: 300px;
 }
@@ -545,7 +545,6 @@ a:hover {
 
 .bi {
   background-image: rgba(254, 252, 255, 0);
-   !important;
 }
 
 .left1 {
