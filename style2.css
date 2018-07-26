@@ -37,7 +37,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-table td,.w3-table th,.w3-table-all td,.w3-table-all th{padding:8px 8px;display:table-cell;text-align:left;vertical-align:top}
 .w3-table th:first-child,.w3-table td:first-child,.w3-table-all th:first-child,.w3-table-all td:first-child{padding-left:16px}
 .w3-btn,.w3-button{border:none;display:inline-block;border-radius: 50%;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap} 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 965px) {
     .w3-button {border-radius: 0; padding: 114px 43px;}
     .w3-display-right {right: 1% !important; top: 54% !important;}
     .w3-display-left {left: 1% !important; top: 54% !important;}}
