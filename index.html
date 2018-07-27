@@ -41,9 +41,12 @@
         <li>
           <a href="#">Accesorios</a>
         </li>
-        <button type="submit" name="button" class="buttonU">
+        <button type="submit" name="button" class="buttonU" id="buttonU">
             <i class="fa fa-search"></i>
           </button>
+          <div class="busqueda" id="busqueda">
+            <h1>hola putas</h1>
+          </div>
       </ul>
     </nav>
   </header>
@@ -398,9 +401,17 @@
     var $burguer = document.getElementById('burguer');
     var $menu = document.getElementById('menu');
 
-    $burguer.addEventListener('touchstart', function(){
+    $burguer.addEventListener('mousedown', function(){
       $menu.classList.toggle('active');
     });
+  </script>
+  <script>
+    var $buttonU = document.getElementById('buttonU');
+    var $busqueda = document.getElementById('busqueda');
+
+    $buttonU.addEventListener('mousedown', function(){
+      $busqueda.classList.toggle('active');
+     });
   </script>
 </body>
 

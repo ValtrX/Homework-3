@@ -448,7 +448,7 @@ a:hover {
     text-align: center;
     padding-bottom: 5px;
     overflow: hidden;
-    background: #3e3c3c96;
+    background: rgba(62, 60, 60, 0.5882352941176471);
 }
 
 .Articulo h4 {
@@ -673,7 +673,23 @@ a:hover {
 #burguer{
     display: none;
 }
-@media screen and (max-width:745px) {
+
+.busqueda{
+    position: absolute;
+    background: black;
+    display: none;
+}
+.busqueda.active{
+    background: white;
+    display: initial;
+}
+
+
+
+
+
+
+@media screen and (max-width:900px) {
     #burguer{
         display: initial;
         color: white;
@@ -696,7 +712,7 @@ a:hover {
         padding: 20px;
         right: -100%;
         top: 0;
-        transition: .3s;
+        transition: .2s;
         flex-direction: row;
         cursor: pointer;
       }
