@@ -190,7 +190,7 @@ a:hover {
     padding: 7px 12px;
     cursor: pointer;
     font-size: 18px;
-    background-color: linear-gradient(to left, #30882ffa, #81cc73);
+    background: linear-gradient(to left, #30882ffa, #81cc73);
     text-decoration: none
 }
 
