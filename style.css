@@ -180,10 +180,10 @@ a:hover {
 }
 
 .button_aviso2 {
-    background: -webkit-linear-gradient(to left, #30882ffa, #81cc73);
-    background: -moz-linear-gradient(to left, #30882ffa, #81cc73);
-    background: -ms-linear-gradient(to left, #30882ffa, #81cc73);
-    background: -o-linear-gradient(to left, #30882ffa, #81cc73);
+    background-color: -webkit-linear-gradient(to left, #30882ffa, #81cc73);
+    background-color: -moz-linear-gradient(to left, #30882ffa, #81cc73);
+    background-color: -ms-linear-gradient(to left, #30882ffa, #81cc73);
+    background-color: -o-linear-gradient(to left, #30882ffa, #81cc73);
     border-radius: 12px;
     border: 0;
     color: white;
