@@ -611,7 +611,8 @@ a:hover {
     border: 0;
     color: white;
     cursor: pointer;
-    padding-left: 15px
+    padding-left: 15px;
+    z-index: 1;
 }
 
 .materialboxed:hover:not(.active) {
@@ -680,8 +681,36 @@ a:hover {
     display: none;
 }
 .busqueda.active{
+    background: rgba(22, 47, 53, 0.6);
+    padding: 20% 43%;
+    left: 0;
+    display: flex;
+}
+
+#placeholder{
+    font-size: 17px;
+    background: black;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px 0 0 8px;
+}
+
+#botoncito{
+    align-items: center;
+    font-size: 13px;
     background: white;
-    display: initial;
+    color: grey;
+    padding: 15px;
+    border-radius: 0 8px 8px 0;
+    display: flex;
+    cursor:pointer;
+}
+
+#botoncito:hover{
+    background: grey;
+    color: white;
+    transition: .6s;
 }
 
 

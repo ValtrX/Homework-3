@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=0.5">
+  <meta name="viewport" content="width=device-width, initial-scale=0.5, user-scalable=no"=
   <title>VGames Store</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
@@ -45,7 +45,8 @@
             <i class="fa fa-search"></i>
           </button>
           <div class="busqueda" id="busqueda">
-            <h1>hola putas</h1>
+            <input type="text" placeholder="Buscar..." id="placeholder">
+            <i class="fa fa-search" id="botoncito"></i>
           </div>
       </ul>
     </nav>
@@ -401,7 +402,7 @@
     var $burguer = document.getElementById('burguer');
     var $menu = document.getElementById('menu');
 
-    $burguer.addEventListener('mousedown', function(){
+    $burguer.addEventListener('mouseup', function(){
       $menu.classList.toggle('active');
     });
   </script>
