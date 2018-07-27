@@ -532,9 +532,10 @@ a:hover {
     border-radius: 50%;
     cursor: pointer
 }
-
-.item {
+.carousel-inner{
     background: linear-gradient(to left, #7c203f, #2f4e9a);
+}
+.item {
     text-align: center;
     height: 300px
 }
