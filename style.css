@@ -44,6 +44,7 @@ a:hover {
     margin-bottom: 1px;
     font-size: 17px;
 }
+
 .header {
     display: flex;
     height: 70px;
@@ -53,7 +54,9 @@ a:hover {
     justify-content: space-around;
     background: black
 }
+
 /* r */
+
 .logo {
     height: 100%;
     display: flex;
@@ -72,7 +75,6 @@ a:hover {
     margin: 0;
     margin-top: 9px;
 }
-
 
 .rel {
     position: relative
@@ -532,9 +534,11 @@ a:hover {
     border-radius: 50%;
     cursor: pointer
 }
-.carousel-inner{
+
+.carousel-inner {
     background: linear-gradient(to left, #7c203f, #2f4e9a);
 }
+
 .item {
     text-align: center;
     height: 300px
@@ -608,14 +612,15 @@ a:hover {
 
 .buttonU {
     background: rgb(154, 49, 49);
-    margin: -4px 0 0 9px; 
+    margin: -4px 0 0 9px;
     padding: 4px 8px;
     border: 0;
     color: white;
     cursor: pointer;
     z-index: 1;
 }
-.buttonU:hover{
+
+.buttonU:hover {
     transform: scale(1.07);
     transition: all .8s;
 }
@@ -629,6 +634,7 @@ a:hover {
     cursor: -webkit-zoom-out;
     cursor: zoom-out
 }
+
 .hoversito:hover {
     opacity: .8;
 }
@@ -672,21 +678,23 @@ a:hover {
     opacity: .8
 }
 
-#burguer{
+#burguer {
     display: none;
 }
 
-.busquedac{
+.busquedac {
     display: flex;
 }
-.busqueda{
+
+.busqueda {
     background: whitesmoke;
 }
-#placeholder.active{
+
+#placeholder.active {
     width: 10%;
 }
 
-#placeholder{
+#placeholder {
     padding: 3px 0;
     top: 53.5%;
     position: absolute;
@@ -695,7 +703,7 @@ a:hover {
     width: 0;
 }
 
-#botoncito{
+#botoncito {
     align-items: center;
     font-size: 1vh;
     background: white;
@@ -707,13 +715,13 @@ a:hover {
     cursor: pointer;
 }
 
-#botoncito:hover{
+#botoncito:hover {
     background: grey;
     color: white;
     transition: .6s;
 }
 
-.BuscarR{
+.BuscarR {
     display: none;
 }
 
@@ -747,7 +755,7 @@ a:hover {
     border-radius: 8px 0 0 8px;
 }
 
-#cerrar{
+#cerrar {
     font-size: 10vw;
     position: absolute;
     top: 50px;
@@ -755,20 +763,15 @@ a:hover {
     left: 87px;
 }
 
-
-
-
-
 @media screen and (max-width:900px) {
-
-    #burguer{
+    #burguer {
         display: initial;
         color: white;
         padding: 9px;
         font-size: 48px;
         z-index: 21;
     }
-    #close{
+    #close {
         display: initial;
         color: white;
         padding: 9px 0;
@@ -786,44 +789,41 @@ a:hover {
         transition: .2s;
         flex-direction: row;
         cursor: pointer;
-      }
-      .menu ul{
-          display: table;
-          margin-bottom: 10px;
-          padding: 0;
-        }
-        .menu li{
-            padding-left: 20px;
-            border-bottom: 1px solid white;                     
-        }
-        .menu a{
-            font-size: 34px;
-        }
-      .menu.active{
+    }
+    .menu ul {
+        display: table;
+        margin-bottom: 10px;
+        padding: 0;
+    }
+    .menu li {
+        padding-left: 20px;
+        border-bottom: 1px solid white;
+    }
+    .menu a {
+        font-size: 34px;
+    }
+    .menu.active {
         right: 0;
-      }
-    .header{
+    }
+    .header {
         justify-content: space-between;
         padding: 0 24px;
     }
     .email {
         display: none;
-    } 
-
+    }
     .logo {
         justify-content: start;
         height: 66px;
     }
-    .logo img {
-    }
+    .logo img {}
     .buttonU {
         display: none
     }
-    .BuscarR{
+    .BuscarR {
         display: inherit;
         width: 100%;
     }
-
 }
 
 @media screen and (max-width:1024px) {
