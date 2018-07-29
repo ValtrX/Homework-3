@@ -46,7 +46,7 @@ a:hover {
 }
 .header {
     display: flex;
-    height: 65px;
+    height: 70px;
     z-index: 20;
     position: fixed;
     width: 100%;
@@ -67,7 +67,7 @@ a:hover {
 }
 
 .menu ul {
-    display: flex;
+    display: inline-flex;
     list-style: none;
     margin: 0;
     margin-top: 9px;
@@ -318,7 +318,7 @@ a:hover {
 }
 
 .Juego {
-    border: 1px solid #b5b5b54a;
+    border: 1px solid rgb(173, 173, 173);
     text-align: center;
     padding-bottom: 5px
 }
@@ -347,7 +347,7 @@ a:hover {
 }
 
 .Juego2 {
-    border: 1px solid #b5b5b54a;
+    border: 1px solid rgb(173, 173, 173);
     text-align: center;
     padding-bottom: 5px;
     overflow: hidden
@@ -607,22 +607,30 @@ a:hover {
 }
 
 .buttonU {
-    background: none;
+    background: rgb(154, 49, 49);
+    margin: -4px 0 0 9px; 
+    padding: 4px 8px;
     border: 0;
     color: white;
     cursor: pointer;
-    padding-left: 15px;
     z-index: 1;
 }
+.buttonU:hover{
+    transform: scale(1.07);
+    transition: all .8s;
+}
 
-.materialboxed:hover:not(.active) {
+.hoversito:hover:not(.active) {
     cursor: pointer;
     transition: 0
 }
 
-.materialboxed.active {
+.hoversito.active {
     cursor: -webkit-zoom-out;
     cursor: zoom-out
+}
+.hoversito:hover {
+    opacity: .8;
 }
 
 #materialbox-overlay {
@@ -660,51 +668,43 @@ a:hover {
     bottom: 10px
 }
 
-.materialboxed:hover:not(.active) {
+.hoversito:hover:not(.active) {
     opacity: .8
 }
 
-.buttonU {
-    background: none;
-    border: 0;
-    color: white;
-    cursor: pointer;
-    padding-left: 15px
-}
 #burguer{
     display: none;
 }
 
-.busqueda{
-    position: absolute;
-    background: black;
-    display: none;
-}
-.busqueda.active{
-    background: rgba(22, 47, 53, 0.6);
-    padding: 20% 43%;
-    left: 0;
+.busquedac{
     display: flex;
+}
+.busqueda{
+    background: whitesmoke;
+}
+#placeholder.active{
+    width: 10%;
 }
 
 #placeholder{
-    font-size: 17px;
-    background: black;
-    color: white;
+    padding: 3px 0;
+    top: 53.5%;
+    position: absolute;
+    transition: .3s;
     border: none;
-    padding: 10px;
-    border-radius: 8px 0 0 8px;
+    width: 0;
 }
 
 #botoncito{
     align-items: center;
-    font-size: 13px;
+    font-size: 1vh;
     background: white;
-    color: grey;
-    padding: 15px;
-    border-radius: 0 8px 8px 0;
     display: flex;
-    cursor:pointer;
+    color: grey;
+    justify-content: center;
+    padding: 3%;
+    border-radius: 0 8px 8px 0;
+    cursor: pointer;
 }
 
 #botoncito:hover{
@@ -713,12 +713,54 @@ a:hover {
     transition: .6s;
 }
 
+.BuscarR{
+    display: none;
+}
+
+#busqueda2 {
+    position: absolute;
+    background: black;
+    display: none;
+}
+
+#busqueda2.active {
+    background: rgba(26, 26, 35, 0.9);
+    color: rgb(0, 0, 0);
+    border: none;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 21;
+    padding: 10px;
+    border-radius: 8px 0 0 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#placeholder2 {
+    font-size: 2vh;
+    background: black;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px 0 0 8px;
+}
+
+#cerrar{
+    font-size: 10vw;
+    position: absolute;
+    top: 50px;
+    color: white;
+    left: 87px;
+}
 
 
 
 
 
 @media screen and (max-width:900px) {
+
     #burguer{
         display: initial;
         color: white;
@@ -776,6 +818,10 @@ a:hover {
     }
     .buttonU {
         display: none
+    }
+    .BuscarR{
+        display: inherit;
+        width: 100%;
     }
 
 }

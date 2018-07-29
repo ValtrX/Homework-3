@@ -11,10 +11,16 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="style2.css">
   <link rel="stylesheet" href="bootstrap-3.3.6/css/bootstrap.css">
+  <link rel="stylesheet" href="fancybox-2.1.7/source/jquery.fancybox.css?v=2.1.7" type="text/css" media="screen">
   <link rel="shortcut icon" href="images/icon.png" type="image/png">
 </head>
-
+<div class="busqueda2" id="busqueda2">
+    <input type="text" placeholder="Buscar..." id="placeholder2">
+    <i class="fa fa-search" id="botoncito"></i>
+    <i class="fa fa-close" id="cerrar"></i>
+</div>
 <body>
+
   <header class="header">
     <div class="logo">
       <img src="images/logo.png" alt="logo">
@@ -23,6 +29,10 @@
     <nav class="menu" id="menu">
       <a class="email" href="mailto:grateroldiaz@hotmail.com"><i class="fa fa-envelope-o" style="font-size:22px;color:red;margin-right:5px;"></i> <span>VGStore@hotmail.com</span></a>
       <ul>
+        <li class="BuscarR" id="BuscarR">
+          <i class="fa fa-search" style="font-size: 45px; color: white;"></i>
+          <a href="#" style="margin-left: 24px;">Buscar</a>
+        </li>
         <li>
           <a href="#">PS4</a>
         </li>
@@ -41,16 +51,21 @@
         <li>
           <a href="#">Accesorios</a>
         </li>
+        <div class="busquedac">
         <button type="submit" name="button" class="buttonU" id="buttonU">
             <i class="fa fa-search"></i>
           </button>
           <div class="busqueda" id="busqueda">
             <input type="text" placeholder="Buscar..." id="placeholder">
-            <i class="fa fa-search" id="botoncito"></i>
           </div>
+        </div>
+            
       </ul>
     </nav>
   </header>
+
+  <div class="cerrarmenu" id="cerrarmenu">
+
   <section class="Slider" style="width:100">
 
     <div class="rel w3-animate-fading mySlides">
@@ -155,21 +170,44 @@
   </section>
 
   <section class="luis">
-    <div class="fila">
-      <img class="materialboxed" src="images/1-min.jpg" alt="">
-      <img class="materialboxed" src="images/2-min.jpg" alt="">
-      <img class="materialboxed" src="images/3-min.jpg" alt="">
-      <img class="materialboxed" src="images/4-min.jpg" alt="">
-      <img class="materialboxed" src="images/10-min.jpg" alt="">
-    </div>
-    <div class="fila">
-      <img class="materialboxed" src="images/5-min.jpg" alt="">
-      <img class="materialboxed" src="images/6-min.jpeg" alt="">
-      <img class="materialboxed" src="images/7-min.jpg" alt="">
-      <img class="materialboxed" src="images/8-min.jpg" alt="">
-      <img class="materialboxed" src="images/11-min.jpg" alt="">
-      <img class="materialboxed" src="images/12-min.jpeg" alt="">
-    </div>
+    <li class="fila">
+      <a class="fancybox-media" href="images/1-min.jpg" rel="group">
+       <img class="hoversito" src="images/1-min.jpg" alt="">
+      </a>
+      <a class="fancybox-media" href="images/2-min.jpg" rel="group">
+        <img class="hoversito" src="images/2-min.jpg" alt="">
+      </a>
+      <a class="fancybox-media" href="images/3-min.jpg" rel="group">
+        <img class="hoversito" src="images/3-min.jpg" alt="">
+      </a>
+      <a class="fancybox-media" href="images/4-min.jpg" rel="group">
+        <img class="hoversito" src="images/4-min.jpg" alt="">
+      </a>
+      <a class="fancybox-media" href="images/10-min.jpg" rel="group">
+        <img class="hoversito" src="images/10-min.jpg" alt="">
+      </a>
+    </li>
+
+    <li class="fila">
+        <a class="fancybox-media" href="images/5-min.jpg" rel="group">
+         <img class="hoversito" src="images/5-min.jpg" alt="">
+        </a>
+        <a class="fancybox-media" href="images/6-min.jpeg" rel="group">
+          <img class="hoversito" src="images/6-min.jpeg" alt="">
+        </a>
+        <a class="fancybox-media" href="images/7-min.jpg" rel="group">
+          <img class="hoversito" src="images/7-min.jpg" alt="">
+        </a>
+        <a class="fancybox-media" href="images/8-min.jpg" rel="group">
+          <img class="hoversito" src="images/8-min.jpg" alt="">
+        </a>
+        <a class="fancybox-media" href="images/11-min.png" rel="group">
+          <img class="hoversito" src="images/11-min.png" alt="">
+        </a>
+        <a class="fancybox-media" href="images/12-min.jpeg" rel="group">
+          <img class="hoversito" src="images/12-min.jpeg" alt="">
+        </a>
+      </li>
   </section>
 
   <section class="Productos luis">
@@ -249,7 +287,6 @@
     <a class="carousel-control2 right1" href="#DemoCarousel" data-slide="next">
                   <span class="glyphicon2 glyphicon-chevron-right"></span>
               </a>
-    </div>
   </section>
 
 
@@ -350,8 +387,7 @@
       <i class="fa fa-phone"><a href="tel:+584244020730" class="white" style="display: inline;">+58 424-4020730</a></i>
     </div>
   </section>
-
-
+</div>
   <script>
     var slideIndex = 1;
     showDivs(slideIndex);
@@ -378,13 +414,18 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="bootstrap-3.3.6/js/bootstrap.min.js"></script>
   <script src="materialize/js/materialize.min.js"></script>
-
+  <script type="text/javascript" src="fancybox-2.1.7/source/jquery.fancybox.pack.js?v=2.1.7"></script>
   <script>
-    $(document).ready(function() {
-      $('.materialboxed').materialbox();
-    });
-  </script>
-
+      $(document).ready(function() {
+        $('.fancybox-media').fancybox({
+          openEffect  : 'none',
+          closeEffect : 'none',
+          helpers : {
+            media : {}
+          }
+        });
+      });
+      </script>
   <script>
     $("#slideshow > div:gt(0)").hide();
 
@@ -401,19 +442,41 @@
   <script>
     var $burguer = document.getElementById('burguer');
     var $menu = document.getElementById('menu');
+    var $cerrarmenu = document.getElementById('cerrarmenu');
 
     $burguer.addEventListener('mouseup', function(){
       $menu.classList.toggle('active');
     });
+
+    $cerrarmenu.addEventListener('mousedown', function(){
+       $menu.classList.remove('active');
+     });
   </script>
   <script>
     var $buttonU = document.getElementById('buttonU');
-    var $busqueda = document.getElementById('busqueda');
+    var $placeholder = document.getElementById('placeholder');
+    var $cerrarmenu = document.getElementById('cerrarmenu');
 
-    $buttonU.addEventListener('mousedown', function(){
-      $busqueda.classList.toggle('active');
+    $buttonU.addEventListener('mouseup', function(){
+      $placeholder.classList.toggle('active');
+     });
+
+     $cerrarmenu.addEventListener('mousedown', function(){
+       $placeholder.classList.remove('active');
      });
   </script>
-</body>
 
+<script>
+    var $BuscarR = document.getElementById('BuscarR');
+    var $busqueda2 = document.getElementById('busqueda2'); 
+    var $cerrar = document.getElementById('cerrar');
+
+    $BuscarR.addEventListener('mouseup', function(){
+      $busqueda2.classList.toggle('active');
+    });
+    $cerrar.addEventListener('mouseup', function(){
+      $busqueda2.classList.remove('active');
+    });
+  </script>
+</body>
 </html>
