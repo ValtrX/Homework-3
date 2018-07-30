@@ -795,6 +795,9 @@ a:hover {
         margin-bottom: 10px;
         padding: 0;
     }
+    .fila{
+        overflow: auto;
+    }
     .menu li {
         padding-left: 20px;
         border-bottom: 1px solid white;
