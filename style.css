@@ -802,6 +802,10 @@ a:hover {
         padding-left: 20px;
         border-bottom: 1px solid white;
     }
+    .mySlides p{
+        font-size: 2.6vw;
+    }
+
     .menu a {
         font-size: 34px;
     }
