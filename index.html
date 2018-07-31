@@ -469,6 +469,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="bootstrap-3.3.6/js/bootstrap.min.js"></script>
   <script src="materialize/js/materialize.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"> </script>
   <script type="text/javascript" src="fancybox-2.1.7/source/jquery.fancybox.pack.js?v=2.1.7"></script>
   <script>
     $(document).ready(function () {
@@ -499,13 +500,26 @@
     var $menu = document.getElementById('menu');
     var $cerrarmenu = document.getElementById('cerrarmenu');
 
-    $burguer.addEventListener('mouseup', function () {
+    $burguer.addEventListener('mouseup', toggleMenu);
+    
+    function showMenu(){
+      $menu.classList.add('active');
+    };
+    function toggleMenu(){
       $menu.classList.toggle('active');
-    });
+    };
 
-    $cerrarmenu.addEventListener('mousedown', function () {
+      $cerrarmenu.addEventListener('mousedown', closeMenu);
+      function closeMenu(){
       $menu.classList.remove('active');
-    });
+    };
+
+    var $body = document.body;
+
+    var hammertime = new Hammer($body);
+    hammertime.on('swipeleft', showMenu);
+    hammertime.on('swiperight', closeMenu);
+
   </script>
   <script>
     var $buttonU = document.getElementById('buttonU');
@@ -536,6 +550,7 @@
     $cerrar.addEventListener('mouseup', function () {
       $busqueda2.classList.remove('active');
     });
+    
   </script>
 </body>
 
